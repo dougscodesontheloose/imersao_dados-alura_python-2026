@@ -374,14 +374,14 @@ with col_graf3:
 with col_graf4:
     if not df_filtrado.empty:
         df_ds = df_filtrado[df_filtrado['cargo'] == 'Data Scientist']
-        media_ds_pais = df_ds.groupby('residencia_iso3')['usd'].mean().reset_index()
+        media_ds_pais = df_ds.groupby('residencia')['usd'].mean().reset_index()
         grafico_paises = px.choropleth(
             media_ds_pais,
-            locations='residencia_iso3',
+            locations='residencia',
             color='usd',
             color_continuous_scale=['#F5F1ED', '#FFDAB9', '#E8A598', '#D4A69A', '#CC8866'],
             title='Salário médio de Cientista de Dados por país',
-            labels={'usd': 'Salário médio (USD)', 'residencia_iso3': 'País'},
+            labels={'usd': 'Salário médio (USD)', 'residencia': 'País'},
             template=template_nasapunk
         )
         grafico_paises.update_geos(
