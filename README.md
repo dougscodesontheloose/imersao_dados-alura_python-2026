@@ -4,7 +4,7 @@ Dashboard interativo desenvolvido para a Imersão Dados com Python da Alura, exp
 
 ## 🚀 Demo
 
-[Ver Dashboard ao Vivo](https://imersaodados-alura-python-2026.streamlit.app/)
+[Ver Dashboard ao Vivo](https://im-dados-alura-python-2026.streamlit.app/)
 
 ## 🎨 Temas Visuais
 
